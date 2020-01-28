@@ -3,14 +3,14 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 body {
-    background-color: #ecf5ff;
+    background-color: #3C3C3C;
 }
 * {
     margin: 0;
     padding: 0;
 }
 #allpage {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 header {
@@ -26,8 +26,9 @@ header {
 .menu {
     width: 100%;
     overflow: auto;
-    background-color: #ffffff;
+    background-color: 	#272727;
     list-style-type: none;
+    border-radius: 5px;
 }
 .menu li {
     width:100%;
@@ -82,4 +83,7 @@ footer {
     position: fixed;
     bottom: 0;
     right: 0;
+}
+p {
+    font-family: Microsoft JhengHei;
 }
