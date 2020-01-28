@@ -3,7 +3,7 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 body {
-    background-color: #ecf5ff;
+    background-color: #3C3C3C;
 }
 * {
     margin: 0;
@@ -26,8 +26,9 @@ header {
 .menu {
     width: 100%;
     overflow: auto;
-    background-color: #ffffff;
+    background-color: 	#272727;
     list-style-type: none;
+    border-radius: 5px;
 }
 .menu li {
     width:5em;
@@ -67,6 +68,7 @@ header {
     margin: 10px 0;
     padding: 20px 26px;
     line-height: 2em;
+    height: 720px;
 }
 .aside {
     width: 28%;
