@@ -23,6 +23,10 @@ header {
 .logo-img {
     width: 100%;
 }
+.logo-fb{
+    width: 100%;
+    height: 3em;
+}
 .menu {
     width: 100%;
     overflow: auto;
@@ -68,6 +72,17 @@ header {
     margin: 10px 0;
     padding: 20px 26px;
     line-height: 2em;
+    height: 345px;
+}
+
+.section-fb {
+    background-color: #3b5998;;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 20px 26px;
+    line-height: 2em;
+    position: static;
+    height: 386px;
 }
 .aside {
     width: 100%;
@@ -86,4 +101,7 @@ footer {
 }
 p {
     font-family: Microsoft JhengHei;
+}
+.video{
+    height: 90%;
 }
