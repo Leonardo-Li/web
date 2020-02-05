@@ -19,7 +19,7 @@
             <nav>
                 <ul class="menu">
                     <!-- <li><a href="">關於</a></li> -->
-                    <li><a href="twitch.html">Twitch</a></li>
+                    <li><a id="aa" onclick="changeCh();">Twitch</a></li>
                     <li><a href="https://www.facebook.com/ZunJueBuFanTaiWanDiWang/" target="_blank">粉絲團</a></li>
                     <li><a href="https://www.instagram.com/zet_lin0/?hl=zh-tw" target="_blank">Instagram</a></li>
                 </ul>
@@ -29,13 +29,19 @@
         </header>
         <div id="content">
             <article class="article">
-                <section class="section-fb">
+                <section class="section-fb" id="fb" style="display: block;">
                     <img class="logo-fb" src="images/Fblogo.png" title="facebookgameing">
                     <iframe class="video"
                         src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FZunJueBuFanTaiWanDiWang%2Flive%2F&amp"
                         width="100%" style="border:none;overflow:hidden;background-color: white;" scrolling="no"
                         frameborder="0" allowTransparency="true" allowFullScreen="true" webkitallowfullscreen="true"
                         mozallowfullscreen="true" allow="autoplay; encrypted-media"></iframe>
+                </section>
+                <section class="section" id="twit" style="display: none;">
+                    <iframe class="video" src="https://player.twitch.tv/?channel=anotsukagehisa" frameborder="0"
+                        allowfullscreen="true" scrolling="no" width="100%"></iframe><a
+                        href="https://www.twitch.tv/anotsukagehisa?tt_content=text_link&tt_medium=live_embed"
+                        style="padding:2px 0px 4px; display:block; width:auto; font-weight:normal; font-size:10px; text-decoration:underline;"></a>
                 </section>
             </article>
             <aside class="aside">
@@ -50,6 +56,25 @@
         </footer>
     </div>
 
+    <script>
+        function changeCh(){
+            let eleF = document.querySelector("#fb");
+            let eleT = document.querySelector("#twit");
+            let aa = document.querySelector("#aa");
+            let a=eleF.style.display;
+            console.log(a.length);
+            if(a.length>4){
+                eleF.style.display="none";
+                eleT.style.display="block";
+                aa.innerHTML="Facebook";
+            }else{
+                eleF.style.display="block";
+                eleT.style.display="none";
+                aa.innerHTML="Twitch";
+            }
+
+        }
+    </script>
 
 </body>
 
